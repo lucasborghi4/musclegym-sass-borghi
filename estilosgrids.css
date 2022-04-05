@@ -59,6 +59,11 @@
     font-size: 20px;
 }
 
+links{font-family: 'Oswald', sans-serif;
+    color:#e0b105;
+    font-size: 20px;
+    text-decoration: none;}
+
 a.links{
     font-family: 'Oswald', sans-serif;
     color:#e0b105;
