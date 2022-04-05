@@ -54,17 +54,21 @@
 }
 
 .opciones{
+    text-decoration: none; 
     font-family: 'Oswald', sans-serif;
     color:#e0b105;
     font-size: 20px;
 }
 
-.links{font-family: 'Oswald', sans-serif;
+.links{
+    text-decoration: none; 
+    font-family: 'Oswald', sans-serif;
     color:#e0b105;
     font-size: 20px;
     text-decoration: none;}
 
 a.links{
+    text-decoration: none; 
     font-family: 'Oswald', sans-serif;
     color:#e0b105;
     font-size: 20px;
@@ -72,10 +76,12 @@ a.links{
 }
 
 a.links:visited {
+    text-decoration: none; 
     color:#e0b105;
 }
 
 a.links:hover {
+    text-decoration: none;
     background: #e0b105;
     color: black;
 }
@@ -843,17 +849,21 @@ a.anotate2:hover {
     }
 
     .opciones{
+        text-decoration: none; 
         font-family: 'Oswald', sans-serif;
         color:#e0b105;
         font-size: 15px;
     }
 
-    .links{font-family: 'Oswald', sans-serif;
+    .links{
+        text-decoration: none; 
+        font-family: 'Oswald', sans-serif;
         color:#e0b105;
         font-size: 15px;
         text-decoration: none;}
 
         a.links{
+            text-decoration: none; 
             font-family: 'Oswald', sans-serif;
             color:#e0b105;
             font-size: 15px;
