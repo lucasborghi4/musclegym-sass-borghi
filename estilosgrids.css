@@ -853,6 +853,22 @@ a.anotate2:hover {
         font-size: 15px;
         text-decoration: none;}
 
+        a.links{
+            font-family: 'Oswald', sans-serif;
+            color:#e0b105;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        
+        a.links:visited {
+            color:#e0b105;
+        }
+        
+        a.links:hover {
+            background: #e0b105;
+            color: black;
+        }
+
     .footertitulo{
         font-size: 20px;
     }
