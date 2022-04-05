@@ -37,20 +37,34 @@
 }
 
 .opciones{
+    text-decoration: none; 
     font-family: 'Oswald', sans-serif;
     color:#e0b105;
     font-size: 20px;
 }
 
+.links{
+    text-decoration: none; 
+    font-family: 'Oswald', sans-serif;
+    color:#e0b105;
+    font-size: 20px;
+    text-decoration: none;}
+
 a.links{
+    text-decoration: none; 
+    font-family: 'Oswald', sans-serif;
+    color:#e0b105;
+    font-size: 20px;
     text-decoration: none;
 }
 
 a.links:visited {
+    text-decoration: none; 
     color:#e0b105;
 }
 
 a.links:hover {
+    text-decoration: none;
     background: #e0b105;
     color: black;
 }
