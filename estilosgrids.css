@@ -320,11 +320,12 @@ maingracias{
     width: 90%;
     justify-self: center;
     align-self: center;
-    padding-bottom: 15px;
-    border-bottom: 5px #e0b105 solid;
     border-top: 5px #e0b105 solid;
-    font-family: 'Titillium Web', sans-serif;
+    border-bottom: 5px #e0b105 solid;
+    padding-bottom: 15px;
     font-size: 15px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: black;
 }
 
 .imagen{
@@ -345,12 +346,16 @@ maingracias{
     padding: 3px;
     padding-left: 10px;
     width: 80%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    
 }
 
 .llegar{
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 25% 75%;
     align-items: center;
     justify-items: center;
     font-family: 'Cinzel Decorative', cursive;
@@ -361,6 +366,12 @@ maingracias{
     border-bottom: 5px #e0b105 solid;
     width: 90%;
     justify-self: flex-end;
+    background-color: black;
+    opacity: 0.75;
+}
+
+.llegar p{
+    margin: 0;
 }
 
 .contacto{
@@ -370,8 +381,9 @@ maingracias{
     border-right: 5px #e0b105 solid;
     border-bottom: 5px #e0b105 solid;
     width: 90%;
-    padding-left: 10px;
-    padding-right: 3px;
+    background-color: black;
+    opacity: 0.75;
+    color: white;
 }
 
 
@@ -381,7 +393,11 @@ maingracias{
     grid-template-columns: 10% 90%;
     justify-self: center;
     align-self: center;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Dosis', sans-serif;
+}
+
+.imgcontacto{
+    opacity: 1;
 }
 
 .datos img{
@@ -396,6 +412,7 @@ maingracias{
     font-family: 'Cinzel Decorative', cursive;
     text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
     font-size: 30px;
+    color: black;
 
 }
 
@@ -1021,11 +1038,12 @@ a.anotate2:hover {
     padding-left: 15px;
     padding-right: 15px;
     width: 90%;
+    
 }
 
 .llegar{
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 25% 75%;
     align-items: center;
     justify-items: center;
     font-family: 'Cinzel Decorative', cursive;
@@ -1039,6 +1057,8 @@ a.anotate2:hover {
     padding-right: 15px;
     justify-self: flex-end;
 }
+
+
 
 .contacto{
     grid-column: 2/3;
