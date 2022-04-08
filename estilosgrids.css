@@ -791,6 +791,10 @@ a.anotate2:hover {
     margin-top: 10px;
 }
 
+.tituloydescri{
+    text-align: center;
+}
+
 .descrianotate{
     margin: 0;
     font-family: 'Titillium Web', sans-serif;
