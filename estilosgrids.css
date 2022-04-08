@@ -16,6 +16,42 @@
 
 }
 
+.cuerpoplanes{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header header header header"
+                        "mainplanes mainplanes mainplanes mainplanes"
+                        "footer footer footer footer";
+
+}
+
+.cuerponosotros{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header header"
+                        "mainnosotros mainnosotros"
+                        "footer footer";
+
+}
+
+.cuerpoanotate{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header"
+                        "mainanotate"
+                        "footer";
+
+}
+
+.cuerpogracias{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header"
+                        "maingracias"
+                        "footer";
+
+}
+
 .contenedor{
     grid-area: header;
     display:flex;
@@ -98,54 +134,6 @@ footer{
     width: 100%;
 }
 
-
-footer2{
-    background-color: black;
-    font-family: 'Oswald', sans-serif;
-    color:#e0b105;
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 1050px;
-    left: 0px;
-}
-
-footer3{
-    background-color: black;
-    font-family: 'Oswald', sans-serif;
-    color:#e0b105;
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 1524px;
-    left: 0px;
-}
-
-footer4{
-    background-color: black;
-    font-family: 'Oswald', sans-serif;
-    color:#e0b105;
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 870px;
-    left: 0px;
-}
-
-footer5{
-    background-color: black;
-    font-family: 'Oswald', sans-serif;
-    color:#e0b105;
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom:0px;
-    left: 0px;
-}
 
 .footertitulo{
     background-color: black;
@@ -239,9 +227,8 @@ mainresto{
 }
 
 mainplanes{
-    position: absolute;
-    top:128px;
-    left:0;
+    margin-top: 128px;
+    grid-area: mainplanes;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-image: url(https://storage.googleapis.com/m-infra.appspot.com/public/res/lucasbbot/20220324-u4tMROu7R3gSBzyRBBevjVxY9ny2-QW6VH-.png);
@@ -253,9 +240,8 @@ mainplanes{
 }
 
 mainnosotros{
-    position: absolute;
-    top:128px;
-    left:0;
+    margin-top: 128px;
+    grid-area: mainnosotros;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: url(https://storage.googleapis.com/m-infra.appspot.com/public/res/lucasbbot/20220324-u4tMROu7R3gSBzyRBBevjVxY9ny2-QW6VH-.png);
@@ -267,12 +253,10 @@ mainnosotros{
 }
 
 mainanotate{
-    position: absolute;
-    display: grid;
+    grid-area: mainanotate;
+    margin-top: 128px;
     grid-template-columns:1;
     width: 100%;
-    top:128px;
-    left:0;
     background-image: url(https://storage.googleapis.com/m-infra.appspot.com/public/res/lucasbbot/20220324-u4tMROu7R3gSBzyRBBevjVxY9ny2-QW6VH-.png);
     background-attachment: fixed;
     background-position: center;
@@ -281,16 +265,15 @@ mainanotate{
 }
 
 maingracias{
-    position: absolute;
+    grid-area: maingracias;
+    margin-top: 128px;
     display: grid;
     grid-template-columns:1;
     grid-template-rows: 40% 60%;
     width: 100%;
-    height: 400px;
+    height: 370px;
     align-self: center;
     justify-self: center;
-    top:128px;
-    left:0;
     background-image: url(https://storage.googleapis.com/m-infra.appspot.com/public/res/lucasbbot/20220324-u4tMROu7R3gSBzyRBBevjVxY9ny2-QW6VH-.png);
     background-attachment: fixed;
     background-position: center;
@@ -342,7 +325,6 @@ maingracias{
     grid-column: 2/3;
     border-right: 5px #e0b105 solid;
     border-top: 5px #e0b105 solid;
-    border-bottom: 5px #e0b105 solid;
     padding: 3px;
     padding-left: 10px;
     width: 80%;
@@ -592,8 +574,18 @@ a.anotate2:hover {
 
 .clases{
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 2rem;
     border: solid #e0b105 3px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.clases1{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 2rem;
     border-top: 0;
     border-bottom: 0;
     border-left: 0;
@@ -601,13 +593,12 @@ a.anotate2:hover {
 
 .textoclass{
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .textoclass1{
     margin: 0;
     justify-self: center;
-    align-self: center;
     font-family: 'Cinzel Decorative', cursive;
     font-size: 27px;
     text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
@@ -616,14 +607,17 @@ a.anotate2:hover {
 
 .textoclass2{
     margin: 0;
+    display: flex;
+    align-items: center;
     justify-self: center;
     align-self: center;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align:center;
+    height: 145px;
     width: 80%;
-    padding-right: 19px;
     font-family: 'Dosis', sans-serif;
-    font-weight: bold;
+    background-color: black;
+    opacity: 0.75;
+    color: white;
 }
 
 .textoprecio{
@@ -1014,6 +1008,8 @@ a.anotate2:hover {
 
 .imagen{
     border: 0;
+    height: 225px;
+
 }
 
 .descri{
