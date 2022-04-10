@@ -557,6 +557,10 @@ a.linkmenu:hover {
 }
 
 
+.anotate2{
+    text-decoration: none; 
+}
+
 a.anotate2 {
     text-decoration: none;
     margin: 0;
