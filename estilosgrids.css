@@ -7,6 +7,11 @@
 
 }
 
+.imgtitulo{
+    width: 120px;
+    height: 120px;
+}
+
 .nav-link{
     font-family: 'Oswald', sans-serif;
     color:#e0b105;
@@ -822,3 +827,18 @@ a.anotate2:hover {
     font-size: 20px;
 }
 
+@media screen and (max-width:540px) {
+    .titulo{
+        font-size: 30px;
+    }
+    .navbar-brand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgtitulo{
+        width: 80px;
+        height: 80px;
+    }
+}
