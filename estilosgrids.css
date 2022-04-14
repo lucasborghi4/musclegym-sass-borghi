@@ -835,10 +835,35 @@ a.anotate2:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: 40px;
     }
 
     .imgtitulo{
         width: 80px;
         height: 80px;
+    }
+
+    main{
+        margin-top: 151px;
+    }
+    
+    mainresto{
+        margin-top: 151px;
+    }
+    
+    mainplanes{
+        margin-top: 151px;
+    }
+    
+    mainnosotros{
+        margin-top: 151px;
+    }
+    
+    mainanotate{
+        margin-top: 151px;
+    }
+    
+    maingracias{
+        margin-top: 151px;
     }
 }
