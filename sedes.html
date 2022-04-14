@@ -5,111 +5,181 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muscle Gym: Vení a Entrenar</title>
-    <link rel="stylesheet" href="estilosani.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilosgrids.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bevan&family=Cinzel+Decorative:wght@400;700&family=Dosis:wght@300&family=Exo:wght@200&family=Libre+Baskerville&family=Merriweather:ital@1&family=Oswald:wght@600&family=Sahitya&family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bevan&family=Dosis:wght@300&family=Exo:wght@200&family=Merriweather:ital@1&family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="shotcut icon" href="https://storage.googleapis.com/m-infra.appspot.com/public/res/lucasbbot/20220314-u4tMROu7R3gSBzyRBBevjVxY9ny2-X6VLX-.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body class="cuerposedes">
-    <header class="contenedor">
-        <ul class="menu1">
-            <li><img src="https://www.pngall.com/wp-content/uploads/2018/04/Gym-Free-Download-PNG-180x180.png" width="120" class="logo"></li>
-            <li class="titulo"><a href=index.html class="link">Muscle Gym</a></li>
-        </ul>
-        <ul class="menu2">
-            <li class="opciones"><a href=sedes.html class="links">SEDES</a></li>
-            <li class="opciones"><a href=planes.html class="links">PLANES</a></li>
-            <li class="opciones"><a href=nosotros.html class="links">NOSOTROS</a></li>
-            <li class="opciones"><a href=anotate.html class="links">ANOTATE YA!</a></li>
-    
-        </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg contenedor">
+          <div class="container-fluid d-flex align-items-end">
+            <img src="https://www.pngall.com/wp-content/uploads/2018/04/Gym-Free-Download-PNG-180x180.png" width="120" height="120" alt="">
+            <span class="titulo navbar-brand"><a href=index.html class="link">Muscle Gym</a></span>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-pills ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href=sedes.html>SEDES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=planes.html>PLANES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=nosotros.html>NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=anotate.html>ANOTATE YA!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </header>
 
-<mainresto>
-    <p class="mainsedes">Sedes</p>
-    <p class="descri">Contamos con 3 sedes estratégicamente ubicadas para que nunca te falte tu <b>MUSCLE GYM</b>. Recordá que todas están abiertas de <b>Lunes a Sabado de 8am a 10pm y Domingos y Feriados de 1pm a 6pm</b>. Podés sacar tu membresía Muscle Gym en cualquiera de ellas. Leé a continuación para conocerlas un poco mejor </p>
-    <p class="mainsedes1">Sede Pilar</p>
-    <div class="imagenydescri">
-        <div class="imagen"><img src="https://as01.epimg.net/diarioas/imagenes/2020/08/20/actualidad/1597940367_402455_1597940487_noticia_normal.jpg" width="500"></div>
-        <div class="descri2">
-        <p class="minitexto">En Pilar encontraras un nuevo concepto en centros comerciales a cielo abierto combinando locales comerciales, foodtrucks y grandes espacios verdes para realizar actividades Outdoor ambientado como una campiña Italiana.</p>
-        <p class="minitexto">Dentro de la recova comercial se encuentra Muscle Gym Pilar, nuestra sede boutique con gran cantidad de maquinas mecánicas y cardiovasculares, salón de sportcycle, salón de fitness grupal, entrenamiento funcional y running team. Manejamos amplios horarios y un servicio personalizado con profesores especializados para que logres todos tus objetivos físicos en un marco de amabilidad y de buenos amigos.</p>
-        </div>
-    </div>
+    <mainresto>
+        <p class="mainsedes">Sedes</p>
+        <p class="descri">Contamos con 3 sedes estratégicamente ubicadas para que nunca te falte tu <b>MUSCLE GYM</b>. Recordá que todas están abiertas de <b>Lunes a Sabado de 8am a 10pm y Domingos y Feriados de 1pm a 6pm</b>. Podés sacar tu membresía Muscle Gym en cualquiera de ellas. Leé a continuación para conocerlas un poco mejor </p>
+        
+        <div class="container">
+            <div class="card mb-3 border-0 bg-transparent">
+                <div class="row align-items-center">
+                    <div class="card-header mainsedes1 d-flex justify-content-center bg-dark col-md-12 border border-warning">Sede Pilar</div>
+                </div>
 
-    <div class="comollegarycontacto">
-        <div class="llegar">
-            <p>¿Cómo llegar?</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105315.60699912508!2d-58.895073857817565!3d-34.42389184786913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cd5b6771c83%3A0x180f9c3928e86bc0!2sPilar%20Fitness!5e0!3m2!1sen!2sar!4v1647236657595!5m2!1sen!2sar" width="50%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    
-        <div class="contacto">
-            <p class="titulocontacto">Contacto</p>
-            <div class="datos"><img src="https://www.clinicamardelplata.com.ar/images/icons/Direcci%C3%B3nBlanco.png" width="30px"> <p>Dirección: Caamaño 800</p></div>
-            <div class="datos"><img src="https://www.pngkit.com/png/full/98-981549_resultado-de-imagen-para-icono-telefono-blanco-phone.png" width="30px"> <p>Teléfono: (11) 7376-1146</p></div>
-            <div class="datos"><img src="https://e6.pngbyte.com/pngpicture/88800/png-mail-icon-white-png-Email-Black-And-White-Logo_thumbnail.png" width="30px"> <p>Email: Pilar@musclegym.com</p></div>
-        </div>
-    </div>
+                <div class="row bg-dark text-white border border-warning align-items-center">
+                    <div class="col-md-6 p-0">
+                    <img src="https://as01.epimg.net/diarioas/imagenes/2020/08/20/actualidad/1597940367_402455_1597940487_noticia_normal.jpg" class="img-fluid rounded-start imagen" alt="SEDE PILAR">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text minitexto text-justify">En Pilar encontraras un nuevo concepto en centros comerciales a cielo abierto combinando locales comerciales, foodtrucks y grandes espacios verdes para realizar actividades Outdoor ambientado como una campiña Italiana.</p>
+                            <p class="card-text minitexto text-justify">Dentro de la recova comercial se encuentra Muscle Gym Pilar, nuestra sede boutique con gran cantidad de maquinas mecánicas y cardiovasculares, salón de sportcycle, salón de fitness grupal, entrenamiento funcional y running team. Manejamos amplios horarios y un servicio personalizado con profesores especializados para que logres todos tus objetivos físicos en un marco de amabilidad y de buenos amigos.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <p class="mainsedes1">Sede Palermo</p>
-    <div class="imagenydescri">
-        <div class="imagen"><img src="https://estaticos-cdn.prensaiberica.es/clip/2925c5d2-7799-4c93-933f-4b0585b58d1f_16-9-aspect-ratio_default_0.jpg" width="500"></div>
-        <div class="descri2">
-            <p class="minitexto">Si estás buscando sentirte bien, cuidar tu salud, mejorar tu calidad de vida y lograr el cuerpo que realmente querés tener, dentro de un ambiente agradable, ¿pensaste en MUSCLE GYM PALERMO?</p>
-            <p class="minitexto">Ya podés hacer la actividad que más te guste, cerca de tu casa o de tu trabajo.</p>
-            <p class="minitexto">MUSCLE GYM Palermo te ofrece las mejores instalaciones, amplios horarios, un servicio personalizado con profesores especializados y actividades para todos, sin importar la edad o condición física actual. Todo, en un clima ideal para hacer nuevos amigos.</p>
-        </div>
-    </div>
+                <div class="row bg-dark border border-warning align-items-center">
+                    <div class="col-md-6">
+                        <div class="card-body d-flex justify-content-center">
+                            <div class="llegar">
+                                <p class="d-flex justify-content-center pb-3 align-top">¿Cómo llegar?</p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105315.60699912508!2d-58.895073857817565!3d-34.42389184786913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cd5b6771c83%3A0x180f9c3928e86bc0!2sPilar%20Fitness!5e0!3m2!1sen!2sar!4v1647236657595!5m2!1sen!2sar" width="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="comollegarycontacto">
-        <div class="llegar"><p>¿Cómo llegar?</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26279.88668826813!2d-58.44290320826683!3d-34.579224943238536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5882532b63b%3A0x5d4defaf613beebe!2sSportClub%20Palermo!5e0!3m2!1sen!2sar!4v1647236915598!5m2!1sen!2sar" width="50%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    
-        <div class="contacto">
-            <p class="titulocontacto">Contacto</p>
-            <div class="datos"><img src="https://www.clinicamardelplata.com.ar/images/icons/Direcci%C3%B3nBlanco.png" width="30px" class="imgcontacto"><p>Dirección: Cabrera 4848</p></div>
-            <div class="datos"><img src="https://www.pngkit.com/png/full/98-981549_resultado-de-imagen-para-icono-telefono-blanco-phone.png" width="30px"><p>Teléfono: (11) 1176-9939</p></div>
-            <div class="datos"><img src="https://e6.pngbyte.com/pngpicture/88800/png-mail-icon-white-png-Email-Black-And-White-Logo_thumbnail.png" width="30px"><p>Email: Palermo@musclegym.com</p></div>
-        </div>
-    </div>    
-
-    <p class="mainsedes1">Sede Recoleta</p>
-    <div class="imagenydescri">
-        <div class="imagen"><img src="https://minutopolitico.com.ar/wp-content/uploads/2021/04/gym-1024x576.jpg" width="500"></div>
-        <div class="descri2">
-            <p class="minitexto">MUSCLE GYM Recoleta te invita a disfrutar de un espacio de más de 1600mts2. distribuidos en 5 plantas. Encontrándose en una de las zonas mejor comunicadas de CABA.</p>
-            <p class="minitexto">Contamos con una amplia zona de máquinas cardiovasculares y un sector especializado en musculación con equipamientos de última generación. Sus salones de fitness grupal gozan con el mejor Staff y gran variedad de actividades que cumplen con las necesidades de cada socio.</p>
-            <p class="minitexto">Nuestro objetivo es el compromiso con la atención y calidad brindada, intentando que todo sea un poco mejor que cuando llegaron.</p>
-        </div>
-    </div>
-
-    <div class="comollegarycontacto">
-        <div class="llegar">
-            <p>¿Cómo llegar?</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.552531316147!2d-58.39925606511231!3d-34.597175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb7bcc47f13f%3A0xfdebc73dcbba91f7!2sIron%20Gym%20Recoleta!5e0!3m2!1sen!2sar!4v1647237059134!5m2!1sen!2sar" width="50%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="col-md-6">
+                        <div class="card-body flex-column align-middle">
+                            <p class="titulocontacto d-flex justify-content-center align-top">Contacto</p>
+                            <div class="datos d-flex justify-content-center p-3 text-white"><img src="https://www.clinicamardelplata.com.ar/images/icons/Direcci%C3%B3nBlanco.png" width="30px" height="30px"> <p>Dirección: Caamaño 800</p></div>
+                            <div class="datos d-flex justify-content-center p-3 text-white"><img src="https://www.pngkit.com/png/full/98-981549_resultado-de-imagen-para-icono-telefono-blanco-phone.png" width="30px" height="30px"> <p>Teléfono: (11) 7376-1146</p></div>
+                            <div class="datos d-flex justify-content-center pt-3 text-white"><img src="https://e6.pngbyte.com/pngpicture/88800/png-mail-icon-white-png-Email-Black-And-White-Logo_thumbnail.png" width="30px" height="30px"> <p>Email: Pilar@musclegym.com</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="contacto">
-            <p class="titulocontacto">Contacto</p>
-            <div class="datos"><img src="https://icons.veryicon.com/png/o/miscellaneous/icon_1/address-60.png" width="30px"><p>Dirección: Jose Perez 141</p></div>
-            <div class="datos"><img src="https://www.pngkit.com/png/full/98-981549_resultado-de-imagen-para-icono-telefono-blanco-phone.png" width="30px"><p>Teléfono: (11) 4776-6236</p></div>
-            <div class="datos"><img src="https://e6.pngbyte.com/pngpicture/88800/png-mail-icon-white-png-Email-Black-And-White-Logo_thumbnail.png" width="30px"><p>Email: Recoleta@musclegym.com</p></div>
-        </div>
-    </div>
+        <div class="container">
+            <div class="card mb-3 border-0 bg-transparent">
+                <div class="row align-items-center">
+                    <div class="card-header mainsedes1 d-flex justify-content-center bg-dark col-md-12 border border-warning">Sede Palermo</div>
+                </div>
 
-</mainresto>
-<footer>
-    <p class="footertitulo">Encontranos en Nuestras Redes</p>
-    <ul class="pie">
-        <li><a href="https://www.facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/725/725289.png" width="30"></a></li>
-        <li><a href="https://www.twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/246/246152.png" width="30"></a></li>
-        <li><a href="https://www.instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/408/408707.png" width="30"></a></li>
-        <li><a href="https://www.whatsapp.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1383/1383269.png" width="30"></a></li>
-    </ul>
-    <p class="aptomedico">Apto médico OBLIGATORIO para todas nuestras sedes</p>
-</footer>
+                <div class="row bg-dark text-white border border-warning align-items-center">
+                    <div class="col-md-6 p-0">
+                        <img src="https://estaticos-cdn.prensaiberica.es/clip/2925c5d2-7799-4c93-933f-4b0585b58d1f_16-9-aspect-ratio_default_0.jpg" class="img-fluid rounded-start imagen" alt="SEDE PILAR">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text minitexto text-justify">Si estás buscando sentirte bien, cuidar tu salud, mejorar tu calidad de vida y lograr el cuerpo que realmente querés tener, dentro de un ambiente agradable, ¿pensaste en MUSCLE GYM PALERMO?</p>
+                            <p class="card-text minitexto text-justify">Ya podés hacer la actividad que más te guste, cerca de tu casa o de tu trabajo.</p>
+                            <p class="card-text minitexto text-justify">MUSCLE GYM Palermo te ofrece las mejores instalaciones, amplios horarios, un servicio personalizado con profesores especializados y actividades para todos, sin importar la edad o condición física actual. Todo, en un clima ideal para hacer nuevos amigos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bg-dark border border-warning align-items-center">
+                    <div class="col-md-6">
+                        <div class="card-body d-flex justify-content-center">
+                            <div class="llegar">
+                                <p class="d-flex justify-content-center pb-3 align-top">¿Cómo llegar?</p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26279.88668826813!2d-58.44290320826683!3d-34.579224943238536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5882532b63b%3A0x5d4defaf613beebe!2sSportClub%20Palermo!5e0!3m2!1sen!2sar!4v1647236915598!5m2!1sen!2sar" width="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-body flex-column align-middle">
+                            <p class="titulocontacto d-flex justify-content-center align-top">Contacto</p>
+                            <div class="datos d-flex justify-content-center p-3 text-white"><img src="https://www.clinicamardelplata.com.ar/images/icons/Direcci%C3%B3nBlanco.png" width="30px" height="30px"> <p>Dirección: Cabrera 4848</p></div>
+                            <div class="datos d-flex justify-content-center p-3 text-white"><img src="https://www.pngkit.com/png/full/98-981549_resultado-de-imagen-para-icono-telefono-blanco-phone.png" width="30px" height="30px"> <p>Teléfono: (11) 1176-9939</p></div>
+                            <div class="datos d-flex justify-content-center pt-3 text-white"><img src="https://e6.pngbyte.com/pngpicture/88800/png-mail-icon-white-png-Email-Black-And-White-Logo_thumbnail.png" width="30px" height="30px"> <p>Email: Palermo@musclegym.com</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card mb-3 border-0 bg-transparent">
+                <div class="row align-items-center">
+                    <div class="card-header mainsedes1 d-flex justify-content-center bg-dark col-md-12 border border-warning">Sede Recoleta</div>
+                </div>
+
+                <div class="row bg-dark text-white border border-warning align-items-center">
+                    <div class="col-md-6 p-0">
+                        <img src="https://minutopolitico.com.ar/wp-content/uploads/2021/04/gym-1024x576.jpg" class="img-fluid rounded-start imagen" alt="SEDE PILAR">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text minitexto text-justify">MUSCLE GYM Recoleta te invita a disfrutar de un espacio de más de 1600mts2. distribuidos en 5 plantas. Encontrándose en una de las zonas mejor comunicadas de CABA.</p>
+                            <p class="card-text minitexto text-justify">Contamos con una amplia zona de máquinas cardiovasculares y un sector especializado en musculación con equipamientos de última generación. Sus salones de fitness grupal gozan con el mejor Staff y gran variedad de actividades que cumplen con las necesidades de cada socio.</p>
+                            <p class="card-text minitexto text-justify">Nuestro objetivo es el compromiso con la atención y calidad brindada, intentando que todo sea un poco mejor que cuando llegaron.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bg-dark border border-warning align-items-center">
+                    <div class="col-md-6">
+                        <div class="card-body d-flex justify-content-center">
+                            <div class="llegar">
+                                <p class="d-flex justify-content-center pb-3 align-top">¿Cómo llegar?</p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.552531316147!2d-58.39925606511231!3d-34.597175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb7bcc47f13f%3A0xfdebc73dcbba91f7!2sIron%20Gym%20Recoleta!5e0!3m2!1sen!2sar!4v1647237059134!5m2!1sen!2sar" width="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-body flex-column align-middle">
+                            <p class="titulocontacto d-flex justify-content-center align-top">Contacto</p>
+                            <div class="datos d-flex justify-content-center p-3 text-white"><img src="https://www.clinicamardelplata.com.ar/images/icons/Direcci%C3%B3nBlanco.png" width="30px" height="30px"> <p>Dirección: Jose Perez 141</p></div>
+                            <div class="datos d-flex justify-content-center p-3 text-white"><img src="https://www.pngkit.com/png/full/98-981549_resultado-de-imagen-para-icono-telefono-blanco-phone.png" width="30px" height="30px"> <p>Teléfono: (11) 4776-6236</p></div>
+                            <div class="datos d-flex justify-content-center pt-3 text-white"><img src="https://e6.pngbyte.com/pngpicture/88800/png-mail-icon-white-png-Email-Black-And-White-Logo_thumbnail.png" width="30px" height="30px"> <p>Email: Recoleta@musclegym.com</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mainresto>
+    <footer>
+        <p class="footertitulo">Encontranos en Nuestras Redes</p>
+        <ul class="pie">
+            <li><a href="https://www.facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/725/725289.png" width="30"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/246/246152.png" width="30"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/408/408707.png" width="30"></a></li>
+            <li><a href="https://www.whatsapp.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1383/1383269.png" width="30"></a></li>
+        </ul>
+        <p class="aptomedico">Apto médico OBLIGATORIO para todas nuestras sedes</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
