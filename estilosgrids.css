@@ -348,7 +348,11 @@ maingracias{
 }
 
 .datos{
+    margin: 0;
     font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
 }
 
 .imgcontacto{
@@ -369,7 +373,9 @@ maingracias{
 .minitexto{
     margin: 0;
     font-family: 'Dosis', sans-serif;
+    font-weight: bold;
     font-size: 18px;
+    color: black;
 }
 
 .datos img{
