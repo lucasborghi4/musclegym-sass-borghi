@@ -1,0 +1,275 @@
+$amarillo: #e0b105;
+$Oswald: 'Oswald', sans-serif;
+$Dosis: 'Dosis', sans-serif;
+
+@mixin fuente($size) {
+    text-decoration: none; 
+    color: black;
+    margin: 0;
+    font-family: 'Bevan', cursive;
+    font-size: $size;
+    text-shadow: -2px -2px 1px $amarillo, 2px 2px 1px $amarillo, -2px 2px 1px $amarillo, 2px -2px 1px $amarillo;
+}
+
+@mixin estiloNav {
+    text-decoration: none; 
+    font-family: $Oswald;
+    color:$amarillo;
+    font-size: 20px;
+}
+
+@mixin titulo {
+    margin: 0;
+    font-family: $Dosis;
+    text-shadow: -2px -2px 1px $amarillo, 2px 2px 1px $amarillo, -2px 2px 1px $amarillo, 2px -2px 1px $amarillo;
+    font-size: 50px;
+    margin-top: 10px;
+    justify-self: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(224,177,5, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color:$amarillo;
+    background-color: black;
+} 
+
+.contenedor{
+    grid-area: header;
+    background-color: black;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.imgtitulo{
+    width: 100px;
+    height: 100px;
+}
+
+.cuerpoplanes{
+    margin: 0;
+    display: grid;
+    grid-template-areas: "header header header header"
+                        "mainplanes mainplanes mainplanes mainplanes"
+                        "footer footer footer footer";
+}
+
+.titulo{
+    @include fuente(42px)
+}
+
+mainplanes{
+    margin-top: 138px;
+    grid-area: mainplanes;
+    background-image: url('pexels-estudio-polaroid-3112004.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.nav-link{
+    @include estiloNav();
+    a{
+        @include estiloNav;
+    }
+}
+
+a.nav-link:visited {
+    @include estiloNav();
+}
+
+a.nav-link:hover {
+    @include estiloNav();
+    background: $amarillo;
+    color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: $amarillo;
+    color: black;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    font-family: $Oswald;
+    color:$amarillo;
+    font-size: 25px;
+    text-align: center;
+}
+
+.introPlan{
+    @include titulo();
+}
+
+.clases{
+    background-color: grey;
+    opacity: 0.9;
+    border-right: solid 3px $amarillo;
+    .textoclass1{
+        margin: 0;
+        font-family: $Dosis;
+        font-size: 32px;
+        text-shadow: -2px -2px 1px $amarillo, 2px 2px 1px $amarillo, -2px 2px 1px $amarillo, 2px -2px 1px $amarillo;
+        border-bottom: solid 3px $amarillo;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: black;
+    }
+    .textoclass2{
+        margin: 0;
+        font-family: $Dosis;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+        height: auto;
+    }
+    .textoprecio{
+        .precio{
+        margin: 0;
+        font-family: $Dosis;
+        font-size: 32px;
+        text-shadow: -2px -2px 1px $amarillo, 2px 2px 1px $amarillo, -2px 2px 1px $amarillo, 2px -2px 1px $amarillo;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: black;
+        margin-top: 12px;
+        }
+        .monto{
+            margin: 0;
+            font-family: $Dosis;
+            font-weight: bolder;
+            font-size: 30px;
+            color: black;
+        }
+    }
+}
+
+.clases1{
+    background-color: grey;
+    opacity: 0.9;
+    .textoclass1{
+        margin: 0;
+        font-family: $Dosis;
+        font-size: 32px;
+        text-shadow: -2px -2px 1px $amarillo, 2px 2px 1px $amarillo, -2px 2px 1px $amarillo, 2px -2px 1px $amarillo;
+        border-bottom: solid 3px $amarillo;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: black;
+    }
+    .textoclass2{
+        margin: 0;
+        font-family: $Dosis;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+        height: auto;
+    }
+    .textoprecio{
+        .precio{
+        margin: 0;
+        font-family: $Dosis;
+        font-size: 32px;
+        text-shadow: -2px -2px 1px $amarillo, 2px 2px 1px $amarillo, -2px 2px 1px $amarillo, 2px -2px 1px $amarillo;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: black;
+        margin-top: 12px;
+        }
+        .monto{
+            margin: 0;
+            font-family: $Dosis;
+            font-weight: bolder;
+            font-size: 30px;
+            color: black;
+        }
+    }
+}
+
+.despedidaplanes{
+    margin-top: 20px;
+}
+
+.introPlan2{
+    @include titulo();
+    margin-right: 20px;
+}
+footer{
+    .footertitulo{
+        background-color: black;
+        font-family: $Oswald;
+        color:$amarillo;
+        font-size: 25px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .pie{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content:center;
+        gap:4rem;
+        align-items:center;
+        margin:0;
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .aptomedico{
+        font-family: 'Exo', sans-serif;
+        color:white;
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+    }
+}
+
+.anotate2{
+    @include titulo();
+}
+
+a.anotate2 {
+    @include titulo();
+}
+
+.anotate2 p{
+    @include titulo();
+}
+
+a.anotate2:visited {
+    @include titulo();
+}
+
+a.anotate2:hover {
+    @include titulo();
+    color: $amarillo;
+    text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black;
+}
+
+@media screen and (max-width:768px) {
+    .clases{
+        border-right: 0;
+    }
+
+    .textoclass1{
+        border-top: solid 3px $amarillo;
+    }
+
+    .clases{
+        .textoprecio{
+            .precio{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
