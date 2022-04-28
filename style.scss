@@ -2,9 +2,14 @@ $amarillo: #e0b105;
 $Oswald: 'Oswald', sans-serif;
 $Dosis: 'Dosis', sans-serif;
 
+$mapaColor: (
+    color-negro: black,
+    color-amarillo: $amarillo,
+);
+
 @mixin fuente($size) {
     text-decoration: none; 
-    color: black;
+    color: map-get($mapaColor, color-negro);
     margin: 0;
     font-family: 'Bevan', cursive;
     font-size: $size;
@@ -25,7 +30,7 @@ $Dosis: 'Dosis', sans-serif;
     font-size: 50px;
     margin-top: 10px;
     justify-self: center;
-    color: black;
+    color: map-get($mapaColor, color-negro);
     font-weight: bolder;
 }
 
@@ -34,13 +39,13 @@ $Dosis: 'Dosis', sans-serif;
 }
 
 .custom-toggler.navbar-toggler {
-    border-color:$amarillo;
-    background-color: black;
+    border-color:map-get($mapaColor, color-amarillo);
+    background-color: map-get($mapaColor, color-negro);
 } 
 
 .contenedor{
     grid-area: header;
-    background-color: black;
+    background-color: map-get($mapaColor, color-negro);
     position:fixed;
     z-index: 1;
     width: 100%;
@@ -85,18 +90,18 @@ a.nav-link:visited {
 
 a.nav-link:hover {
     @include estiloNav();
-    background: $amarillo;
-    color: black;
+    background: map-get($mapaColor, color-amarillo);
+    color: map-get($mapaColor, color-negro);
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: $amarillo;
-    color: black;
+    background-color: map-get($mapaColor, color-amarillo);
+    color: map-get($mapaColor, color-negro);
 }
 
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: map-get($mapaColor, color-negro);
     font-family: $Oswald;
     color:$amarillo;
     font-size: 25px;
@@ -120,14 +125,14 @@ footer{
         border-bottom: solid 3px $amarillo;
         font-weight: bold;
         margin-bottom: 12px;
-        color: black;
+        color: map-get($mapaColor, color-negro);
     }
     .textoclass2{
         margin: 0;
         font-family: $Dosis;
         font-weight: bold;
         font-size: 18px;
-        color: black;
+        color: map-get($mapaColor, color-negro);
         text-align: justify;
         height: 150px;
     }
@@ -139,7 +144,7 @@ footer{
         text-shadow: -2px -2px 1px $amarillo, 2px 2px 1px $amarillo, -2px 2px 1px $amarillo, 2px -2px 1px $amarillo;
         font-weight: bold;
         margin-bottom: 12px;
-        color: black;
+        color: map-get($mapaColor, color-negro);
         margin-top: 12px;
         }
         .monto{
@@ -147,52 +152,14 @@ footer{
             font-family: $Dosis;
             font-weight: bolder;
             font-size: 30px;
-            color: black;
+            color: map-get($mapaColor, color-negro);
         }
     }
 }
 
 .clases1{
-    background-color: grey;
-    opacity: 0.9;
-    .textoclass1{
-        margin: 0;
-        font-family: $Dosis;
-        font-size: 32px;
-        text-shadow: -2px -2px 1px $amarillo, 2px 2px 1px $amarillo, -2px 2px 1px $amarillo, 2px -2px 1px $amarillo;
-        border-bottom: solid 3px $amarillo;
-        font-weight: bold;
-        margin-bottom: 12px;
-        color: black;
-    }
-    .textoclass2{
-        margin: 0;
-        font-family: $Dosis;
-        font-weight: bold;
-        font-size: 18px;
-        color: black;
-        text-align: justify;
-        height: 150px;
-    }
-    .textoprecio{
-        .precio{
-        margin: 0;
-        font-family: $Dosis;
-        font-size: 32px;
-        text-shadow: -2px -2px 1px $amarillo, 2px 2px 1px $amarillo, -2px 2px 1px $amarillo, 2px -2px 1px $amarillo;
-        font-weight: bold;
-        margin-bottom: 12px;
-        color: black;
-        margin-top: 12px;
-        }
-        .monto{
-            margin: 0;
-            font-family: $Dosis;
-            font-weight: bolder;
-            font-size: 30px;
-            color: black;
-        }
-    }
+    @extend .clases;
+    border: none;
 }
 
 .despedidaplanes{
@@ -200,14 +167,14 @@ footer{
 }
 
 .introPlan2{
-    @include titulo();
+    @extend .introPlan;
     margin-right: 20px;
 }
 footer{
     .footertitulo{
-        background-color: black;
+        background-color: map-get($mapaColor, color-negro);
         font-family: $Oswald;
-        color:$amarillo;
+        color:map-get($mapaColor, color-amarillo);
         font-size: 25px;
         width: 100%;
         margin: 0;
@@ -236,23 +203,23 @@ footer{
 }
 
 .anotate2{
-    @include titulo();
+    @extend .introPlan;
 }
 
 a.anotate2 {
-    @include titulo();
+    @extend .introPlan;
 }
 
 .anotate2 p{
-    @include titulo();
+    @extend .introPlan;
 }
 
 a.anotate2:visited {
-    @include titulo();
+    @extend .introPlan;
 }
 
 a.anotate2:hover {
-    @include titulo();
+    @extend .introPlan;
     color: $amarillo;
     text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black;
 }

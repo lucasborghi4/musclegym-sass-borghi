@@ -74,7 +74,7 @@ footer {
   font-size: 25px;
   text-align: center; }
 
-.introPlan {
+.introPlan, .introPlan2, .anotate2, a.anotate2, .anotate2 p, a.anotate2:visited, a.anotate2:hover {
   margin: 0;
   font-family: "Dosis", sans-serif;
   text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
@@ -84,12 +84,12 @@ footer {
   color: black;
   font-weight: bolder; }
 
-.clases {
+.clases, .clases1 {
   background-color: grey;
   opacity: 0.9;
   border-right: solid 3px #e0b105;
   vertical-align: middle; }
-  .clases .textoclass1 {
+  .clases .textoclass1, .clases1 .textoclass1 {
     margin: 0;
     font-family: "Dosis", sans-serif;
     font-size: 32px;
@@ -98,7 +98,7 @@ footer {
     font-weight: bold;
     margin-bottom: 12px;
     color: black; }
-  .clases .textoclass2 {
+  .clases .textoclass2, .clases1 .textoclass2 {
     margin: 0;
     font-family: "Dosis", sans-serif;
     font-weight: bold;
@@ -106,7 +106,7 @@ footer {
     color: black;
     text-align: justify;
     height: 150px; }
-  .clases .textoprecio .precio {
+  .clases .textoprecio .precio, .clases1 .textoprecio .precio {
     margin: 0;
     font-family: "Dosis", sans-serif;
     font-size: 32px;
@@ -115,7 +115,7 @@ footer {
     margin-bottom: 12px;
     color: black;
     margin-top: 12px; }
-  .clases .textoprecio .monto {
+  .clases .textoprecio .monto, .clases1 .textoprecio .monto {
     margin: 0;
     font-family: "Dosis", sans-serif;
     font-weight: bolder;
@@ -123,53 +123,12 @@ footer {
     color: black; }
 
 .clases1 {
-  background-color: grey;
-  opacity: 0.9; }
-  .clases1 .textoclass1 {
-    margin: 0;
-    font-family: "Dosis", sans-serif;
-    font-size: 32px;
-    text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
-    border-bottom: solid 3px #e0b105;
-    font-weight: bold;
-    margin-bottom: 12px;
-    color: black; }
-  .clases1 .textoclass2 {
-    margin: 0;
-    font-family: "Dosis", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-    text-align: justify;
-    height: 150px; }
-  .clases1 .textoprecio .precio {
-    margin: 0;
-    font-family: "Dosis", sans-serif;
-    font-size: 32px;
-    text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
-    font-weight: bold;
-    margin-bottom: 12px;
-    color: black;
-    margin-top: 12px; }
-  .clases1 .textoprecio .monto {
-    margin: 0;
-    font-family: "Dosis", sans-serif;
-    font-weight: bolder;
-    font-size: 30px;
-    color: black; }
+  border: none; }
 
 .despedidaplanes {
   margin-top: 20px; }
 
 .introPlan2 {
-  margin: 0;
-  font-family: "Dosis", sans-serif;
-  text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
-  font-size: 50px;
-  margin-top: 10px;
-  justify-self: center;
-  color: black;
-  font-weight: bolder;
   margin-right: 20px; }
 
 footer .footertitulo {
@@ -199,64 +158,16 @@ footer .aptomedico {
   justify-content: flex-start;
   margin: 0; }
 
-.anotate2 {
-  margin: 0;
-  font-family: "Dosis", sans-serif;
-  text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
-  font-size: 50px;
-  margin-top: 10px;
-  justify-self: center;
-  color: black;
-  font-weight: bolder; }
-
-a.anotate2 {
-  margin: 0;
-  font-family: "Dosis", sans-serif;
-  text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
-  font-size: 50px;
-  margin-top: 10px;
-  justify-self: center;
-  color: black;
-  font-weight: bolder; }
-
-.anotate2 p {
-  margin: 0;
-  font-family: "Dosis", sans-serif;
-  text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
-  font-size: 50px;
-  margin-top: 10px;
-  justify-self: center;
-  color: black;
-  font-weight: bolder; }
-
-a.anotate2:visited {
-  margin: 0;
-  font-family: "Dosis", sans-serif;
-  text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
-  font-size: 50px;
-  margin-top: 10px;
-  justify-self: center;
-  color: black;
-  font-weight: bolder; }
-
 a.anotate2:hover {
-  margin: 0;
-  font-family: "Dosis", sans-serif;
-  text-shadow: -2px -2px 1px #e0b105, 2px 2px 1px #e0b105, -2px 2px 1px #e0b105, 2px -2px 1px #e0b105;
-  font-size: 50px;
-  margin-top: 10px;
-  justify-self: center;
-  color: black;
-  font-weight: bolder;
   color: #e0b105;
   text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
 
 @media screen and (max-width: 992px) {
-  .clases {
+  .clases, .clases1 {
     border-right: 0; }
   .textoclass1 {
     border-top: solid 3px #e0b105; }
-  .clases .textoprecio .precio {
+  .clases .textoprecio .precio, .clases1 .textoprecio .precio {
     margin-bottom: 0; }
   .titulo {
     font-size: 30px; }
